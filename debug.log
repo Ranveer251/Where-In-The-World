@@ -1,0 +1,19 @@
+[0710/195542.474:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0710/200116.663:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0712/123229.326:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0713/120226.928:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0713/230617.566:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0713/235815.369:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0714/000012.956:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0714/002055.360:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0714/015110.140:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0714/124631.150:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0715/003613.931:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0715/010856.112:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0715/120912.165:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0715/151418.358:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0716/151436.863:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\manik\AppData\Local\Google\Chrome\User Data\Crashpad\reports\3f8663e2-c743-4141-8ac0-84197158c4c5.dmp: The process cannot access the file because it is being used by another process. (0x20)
+[0716/151517.232:ERROR:process_info.cc(359)] UncheckedAllocate
+[0716/151519.452:ERROR:http_transport_win.cc(276)] WinHttpSendRequest: The operation completed successfully. (0x0)
+[0716/174117.530:ERROR:process_info.cc(359)] UncheckedAllocate
+[0718/230759.063:ERROR:process_info.cc(359)] UncheckedAllocate
