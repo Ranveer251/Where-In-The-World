@@ -1,0 +1,514 @@
+body {
+  margin: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: hsl(207, 26%, 17%);
+}
+
+.lightBg{
+  background-color: hsl(0, 0%, 98%);
+}
+
+.block{
+  display: block;
+}
+
+.none{
+  display: none;
+}
+
+.crossIcon{
+  margin-left: 5px;
+}
+
+.toTop{
+  position: fixed;
+  bottom: 3%;
+  right: 5px;
+  cursor: pointer;
+}
+
+.loader {
+  position: absolute;
+  top: calc(50% - 4em);
+  left: calc(50% - 4em);
+  width: 6em;
+  height: 6em;
+  border: 1.1em solid rgba(0, 0, 0, 0.2);
+  border-left: 1.1em solid #000000;
+  border-radius: 50%;
+  animation: load8 1.1s infinite linear;
+  transition: opacity 0.3s;
+}
+
+.loader--hide {
+  opacity: 0;
+}
+
+@keyframes load8 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+                                            /* NAVBAR */
+
+.modeText{
+  display: inline-block;
+  cursor: pointer;
+}
+
+.modeIcon{
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.navbar{
+  padding: 10px 5%;
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+}
+
+.h1{
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.nav-right{
+  position: absolute;
+  right: 5%;
+}
+
+                                        /* Search and Filter */
+
+#Search{
+  padding: 50px 5% 30px;
+}
+
+.search{
+  border-radius: 0 8px 8px 0;
+  border: none;
+  background-color: hsl(209, 23%, 22%);
+  padding: 14px;
+  width: 300px;
+  color: hsl(0, 0%, 100%);
+  outline: none;
+}
+
+.search::placeholder{
+  font-size: 13px;
+  color: hsl(0, 0%, 100%);
+}
+
+.searchBtn{
+  border-radius: 8px 0 0 8px;
+  border: none;
+  background-color: hsl(209, 23%, 22%);
+  padding: 14px;
+  padding-left: 20px;
+  outline: none;
+  box-shadow: none;
+  color: hsl(0, 0%, 100%);
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.filter{
+  background-color: hsl(209, 23%, 22%);
+  padding: 4px;
+  outline: none;
+  border-width: 2px 0px ;
+  border-color: hsl(209, 23%, 22%);
+  border-style: solid;
+  border-radius: 8px;
+  color: hsl(0, 0%, 100%);
+  position: absolute;
+  right: 5%;
+  top: 112px;
+}
+
+.filter button{
+  font-size: 14px;
+  outline: none;
+  border: none;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.dropdownArrow{
+  color: hsl(0, 0%, 100%);
+  margin-left: 30px;
+  display: inline-block;
+}
+
+.white{
+  color: hsl(0, 0%, 100%);
+}
+
+.filter .show{
+  display: block;
+}
+
+.filter .hide{
+  display: none;
+}
+
+.dropdown-menu{
+  margin-top: 14px;
+  width: 100%;
+  background-color: hsl(209, 23%, 22%);
+}
+  
+.dropdown-item{
+  color: hsl(0, 0%, 100%);
+}
+
+.light .dropdown-item{
+  color: unset;
+}
+
+.filter button:hover{
+  color: hsl(0, 0%, 100%);
+}
+
+.light.filter button:hover {
+  color: hsl(200, 15%, 8%);
+}
+
+.filterList{
+  background-color: hsl(207, 26%, 17%);
+  color: hsl(0, 0%, 100%);
+  margin:0 5%;
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+
+.filterItem{
+  background-color: hsl(209, 23%, 22%);
+  padding: 10px;
+}
+
+.filterItem button{
+  background-color: hsl(209, 23%, 22%);
+  border: none;
+  outline: none;
+}
+
+                                            /* Country Cards */
+
+#cardSection{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0 5%;
+}
+
+.card{
+  width: 20.5%;
+  border: none;
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 8px;
+  margin-bottom: 4%;
+  margin-right: 6%;
+  font-family: 'Nunito Sans', sans-serif;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:nth-of-type(4n){
+  margin-right: 0;
+}
+
+.card h2{
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.cardInfo{
+  padding: 20px;
+}
+
+.card img{
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.no-results{
+  color: white;
+  font-size: 30px;
+}
+
+.noPadding{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#preDisplay{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+
+                                          /* Details Page */
+
+.back{
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+  margin-top: 30px;
+}
+
+.back:hover{
+  color: hsl(0, 0%, 100%);
+}
+
+.back.light:hover{
+  color: hsl(200, 15%, 8%);
+}
+
+.details{
+  padding: 10px 5% 100px;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.content img{
+  width: 80%;
+  height: 80%;
+  margin-top: 50px;
+}
+
+.moreDetails{
+  width: 100%;
+  color: hsl(0, 0%, 100%);
+  margin-top: 50px;
+  position: relative;
+}
+
+.moreDetails h3{
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.InfoTitle{
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+
+.lightText .InfoTitle{
+  color: hsl(200, 15%, 8%);
+}
+
+.specificDetails{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+  color: #ded9d9;
+  line-height: 2;
+}
+
+.lightText .specificDetails{
+  color: unset;
+}
+
+.flag{
+  width: 100%;
+}
+
+.borderCountries{
+  border-top: 40px;
+  margin-top: 30px;
+}
+
+.borderC{
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+  padding: 2px 20px;
+  margin-right: 10px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.borderC:hover{
+  color: hsl(0, 0%, 100%);
+}
+
+.lightText .borderC{
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(200, 15%, 8%);
+}
+
+                                            /* Covid Info */
+
+.covid{
+  color: hsl(0, 0%, 100%);
+}
+
+.covid h2, .lightText h2{
+  margin-top: 50px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.covidCards{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.covidCard{
+  text-align: center;
+  background-color: hsl(209, 23%, 22%);
+  padding: 30px;
+  border-radius: 8px;
+  width: 40%;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.covidCard .number{
+  font-size: 30px;
+}
+
+.covidCard h4{
+  font-weight: 800;
+}
+
+.lightText .covidCard{
+  background-color: hsl(0, 0%, 100%);
+}
+
+                                                 /* Theme */
+ 
+.light{
+  color: hsl(200, 15%, 8%);
+  background-color: hsl(0, 0%, 100%);
+  border-color: hsl(0, 0%, 100%);
+}
+
+.light::placeholder{
+  color: hsl(200, 15%, 8%);
+}
+
+.lightText{
+  color: hsl(200, 15%, 8%);
+}
+
+                                                /* @Media queries */
+
+@media ( max-width: 1200px) and (min-width:801px){
+  .card{
+    width: 31.1%;
+    margin-right: 3.33%;
+  }
+
+  .card:nth-of-type(4n){
+    margin-right: 3.33%;
+  }
+
+  .card:nth-of-type(3n){
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 950px){
+  .content{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content img{
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 501px){
+  .card{
+    width: 45%;
+    margin-right: 9%;
+  }
+
+  .card:nth-of-type(4n){
+    margin-right: 9%;
+  }
+
+  .card:nth-of-type(2n){
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .search{
+    width: 200px;
+  }
+  .covidCards{
+    flex-direction: column;
+  }
+  .covidCard{
+    margin: 0 auto 30px;
+    width: 60%;
+  }
+}
+
+@media (max-width: 500px){
+  .card{
+    width: 80%;
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+
+  .card:nth-of-type(4n){
+    margin-right: 5%;
+  }
+  .search{
+    width: 70%;
+    margin-right: 2%;
+  }
+  .searchBtn{
+    margin-left: 2%;
+  }
+  .filter{
+    position: static;
+    width: 190px;
+    margin-top: 30px;
+    margin-left: 2%;
+  }
+  .specificDetails{
+    display: block;
+  }
+  .rightSide{
+    margin-top: 30px;
+  }
+  .covidCards{
+    flex-direction: column;
+  }
+  .covidCard{
+    margin: 0 auto 30px;
+    width: 60%;
+  }
+  .borderCountries .InfoTitle{
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 350px){
+  .modeText{
+    display: none;
+  }
+  .covidCard{
+    width: 80%;
+  }
+}
+

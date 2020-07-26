@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/Where-In-The-World-/static/js/main.2cc6fc69.chunk.js",
+    "main.js.map": "/Where-In-The-World-/static/js/main.2cc6fc69.chunk.js.map",
+    "runtime-main.js": "/Where-In-The-World-/static/js/runtime-main.80a4214d.js",
+    "runtime-main.js.map": "/Where-In-The-World-/static/js/runtime-main.80a4214d.js.map",
+    "static/js/2.55b7ec56.chunk.js": "/Where-In-The-World-/static/js/2.55b7ec56.chunk.js",
+    "static/js/2.55b7ec56.chunk.js.map": "/Where-In-The-World-/static/js/2.55b7ec56.chunk.js.map",
+    "index.html": "/Where-In-The-World-/index.html",
+    "precache-manifest.276edd3e2bad909794bd005d8f85f5d9.js": "/Where-In-The-World-/precache-manifest.276edd3e2bad909794bd005d8f85f5d9.js",
+    "service-worker.js": "/Where-In-The-World-/service-worker.js",
+    "static/js/2.55b7ec56.chunk.js.LICENSE.txt": "/Where-In-The-World-/static/js/2.55b7ec56.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.80a4214d.js",
+    "static/js/2.55b7ec56.chunk.js",
+    "static/js/main.2cc6fc69.chunk.js"
+  ]
+}
